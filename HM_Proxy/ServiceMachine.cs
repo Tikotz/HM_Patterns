@@ -9,7 +9,6 @@ namespace HM_Proxy
     public class ServiceMachine : IServiceMechine
     {
         private InteriorOffice interiorOffice;
-        public Client Client { get; set; }
 
         public ServiceMachine(InteriorOffice interiorOffice)
         {

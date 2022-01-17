@@ -6,7 +6,15 @@ namespace HM_Builder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            VacationBuilder Highcost = new HighCost_Vacation();
+            Highcost.ConstructVacation();
+            Vacation vacation = Highcost.GetVacation();
+            Console.WriteLine("your vacation is ready: "+ vacation);
+
+            VacationBuilder Lowcost = new LowCoast_Vacations();
+            Lowcost.ConstructVacation();
+            Vacation vacation2 = Lowcost.GetVacation();
+            Console.WriteLine("your vacation is ready: " + vacation2);
         }
     }
 }
